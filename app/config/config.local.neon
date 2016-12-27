@@ -1,0 +1,14 @@
+parameters:
+
+
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=pg-cms'
+	user:
+	password:
+	options:
+		lazy: yes
+
+doctrine:
+    user: pg-cms
+    password: abcd1234
+    dbname: pg-cms
