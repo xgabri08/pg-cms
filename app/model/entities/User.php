@@ -103,7 +103,13 @@ class User extends Object
     public function setDateRegisteredNow()
     {
         $this->dateRegistered = new DateTime('now');
-    }        
+    }
+    
+    public function setUserRoleGuest() {
+        $userRole = new UserRole();
+        $userRole->setRoleGuest();
+        $this->userRole = $userRole;
+    }
     
 }
 

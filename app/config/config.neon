@@ -20,6 +20,8 @@ services:
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory
 	- App\Forms\SignUpFormFactory
+	- App\Model\Facades\UserFacade
+	- App\Model\Security\NettePasswordHasher;
 	router: App\RouterFactory::createRouter
 
 extensions:
